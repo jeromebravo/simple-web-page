@@ -52,23 +52,19 @@ nav li a {
     margin: 10px;
     font-size: 1.2rem;
     opacity: 0.75;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: all .5s;
 }
 
 nav li a:hover {
     opacity: 1;
+    border-bottom: 2px solid red;
 }
 
 header nav li a {
     text-decoration: none;
     color: black
-}
-
-.hero {
-    background-color: #FF2121;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
 }
 
 .content {
@@ -98,23 +94,31 @@ header nav li a {
 }
 
 .btn {
-    background-color: white;
-    font-weight: bold;
+    background-color: #F83C3C;
+    font-weight: 500;
     border-radius: 5px;
     padding: 20px 50px;
     margin-top: 20px;
-    color: black;
+    color: white;
     text-decoration: none;
+    margin-top: 50px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: red;
 }
 
 .products {
     background-color: #101010;
     color: white;
     padding: 80px 100px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
 .products h1 {
